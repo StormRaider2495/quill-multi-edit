@@ -1,5 +1,6 @@
 {
     "name": "quill-edit-multiple",
+    "homepage":".",
     "version": "0.0.1",
     "description": "A sample application showing how you can have multiple editable areas of your app using the Quill editor with only one toolbar, moving the editor around.",
     "license": "MIT",
