@@ -114,9 +114,6 @@ const App = () => {
                 {/* Define what formats we want in the toolbar */}
                 <div ref={quillToolbarContainer} className="ql-toolbar">
                     <span className="ql-formats">
-                       <button className="ql-emoji"></button>
-                    </span>
-                    <span className="ql-formats">
                        <select className="ql-font"></select>
                        <select className="ql-size"></select>
                     </span>
@@ -164,6 +161,9 @@ const App = () => {
                     </span>
                     <span className="ql-formats">
                         <button className="ql-clean"></button>
+                    </span>
+                    <span className="ql-formats">
+                       <button className="ql-emoji"></button>
                     </span>
                 </div>
             </div>
