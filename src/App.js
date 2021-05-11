@@ -1,4 +1,6 @@
 import "./App.css";
+// Import CSS file of quill emoji module
+import "quill-emoji/dist/quill-emoji.css";
 
 import React, { useEffect, useRef, useState } from "react";
 import Quill from "quill";
@@ -31,12 +33,17 @@ const App = () => {
      * the element for it. Also, use our own toolbar.
      */
     useEffect(() => {
+        // Regstering modules to Quill
+        Quill.register("modules/emoji", Emoji);
 
         // Store the quill instance for future use
         quillInstance.current = new Quill(quillEditorContainer.current, {
             theme: "snow",
             modules: {
                 toolbar: quillToolbarContainer.current,
+                "emoji-toolbar": true,
+                "emoji-textarea": true,
+                "emoji-shortname": true,
             }
         });
     }, []);
