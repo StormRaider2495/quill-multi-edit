@@ -11,3 +11,7 @@ If a user hits the escape key, the Editable will be deactivated, moving the edit
 ## Emoji Support
 
 Added support of Emoji to the quil editor by integrating <https://www.npmjs.com/package/quill-emoji>
+
+## Hosting
+
+The current code is hosted at <https://stormraider2495.github.io/quill-multi-edit/build/index.html>
